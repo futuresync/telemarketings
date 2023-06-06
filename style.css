@@ -1,0 +1,21 @@
+@font-face { font-family: Kollektif; src: url(fonts/Kollektif.ttf); }
+@font-face { font-family: Kollektif-Italic; src: url(fonts/Kollektif-Italic.ttf); }
+@font-face { font-family: Kollektif-Bold; src: url(fonts/Kollektif-Bold.ttf); }
+@font-face { font-family: Kollektif-BoldItalic; src: url(fonts/Kollektif-BoldItalic.ttf); }
+
+.font{ font-family: Kollektif, sans-serif; font-weight: 500 !important;}
+.font-italic { font-family: Kollektif-Italic, sans-serif; font-weight: 500 !important;}
+.font-bold { font-family: Kollektif-Bold, sans-serif; font-weight: 500 !important;}
+.font-bold-italic { font-family: Kollektif-BoldItalic, sans-serif; font-weight: 500 !important;}
+
+/* bulma fix */
+.navbar-item img{ max-height: 70px !important; }
+
+.clear10x{  height: 10px; }
+.clear20x{  height: 20px; }
+.clear60x{  height: 60px; }
+.clear70x{  height: 70px; }
+.clear80x{  height: 80px; }
+.clear90x{  height: 90px; }
+.clear100x{ height: 100px; }
+
