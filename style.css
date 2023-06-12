@@ -13,6 +13,7 @@
 
 .clear10x{  height: 10px; }
 .clear20x{  height: 20px; }
+.clear30x{  height: 30px; }
 .clear60x{  height: 60px; }
 .clear70x{  height: 70px; }
 .clear80x{  height: 80px; }
@@ -38,6 +39,16 @@
 
 .mobile ul li{
     padding-bottom: 10px;
+}
+
+.redes-sociais{
+    display: inline-flex;
+}
+.redes-sociais li{
+    padding-right: 20px;
+}
+.redes-sociais li i{
+    font-size: 60px;
 }
 
 @media (orientation: portrait){
