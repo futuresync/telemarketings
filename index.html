@@ -1,153 +1,175 @@
 <html>
 
-<head>
-    <title>Telemarketings</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="icon" href="image/icon.png">
+    <head>
+        <title>Telemarketings</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="icon" href="image/icon.png">
 
-    <!-- css -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://bulma.io/vendor/fontawesome-free-5.15.2-web/css/all.min.css">
+        <!-- css -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link rel="stylesheet" href="https://bulma.io/vendor/fontawesome-free-5.15.2-web/css/all.min.css">
 
-    <!-- scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="app.js"></script>
-</head>
+        <!-- scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="app.js"></script>
+    </head>
 
-<body>
-    <!-- header -->
-    <section class="hero section">
-        <div class="hero-head">
-            <nav class="navbar">
-                <div class="container has-text-centered">
-                    <div class="navbar-brand">
-                        <a class="navbar-item">
-                            <img src="image/logo-full.png" alt="Logo">
-                        </a>
-                        <span class="navbar-burger" data-target="navbarMenuHeroA">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+    <body>
+        <!-- mobile -->
+        <div class="mobile">
+            <h1>Menu</h1>
+            <div class="clear20x"></div>
+            <ul>
+                <li><a class="navbar-item is-active" onclick="section1();">Sobre</a></li>
+                <li><a class="navbar-item is-active" onclick="section3();">Vagas de emprego</a></li>
+                <li>
+                    <a class="button is-info" onclick="section4()">
+                        <span class="icon">
+                            <i class="fas fa-users-cog"></i>
                         </span>
-                    </div>
-                    <div id="navbarMenuHeroA" class="navbar-menu">
-                        <div class="navbar-end">
-                            <a class="navbar-item is-active" onclick="section1();">
-                                Sobre
+                        <span>Avaliação de Desempenho</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- header -->
+        <section class="hero section">
+            <div class="hero-head">
+                <nav class="navbar">
+                    <div class="container has-text-centered">
+                        <div class="navbar-brand">
+                            <a class="navbar-item">
+                                <img src="image/logo-full.png" alt="Logo">
                             </a>
-                            <!--<a class="navbar-item" onclick="section2()">
-                                Dicas de Telemarketing
-                            </a>-->
-                            <a class="navbar-item" onclick="section3()">
-                                Vagas de emprego
+                            <a onclick="openMobile()">
+                                <span class="navbar-burger" data-target="navbarMenuHeroA">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
                             </a>
-                            <span class="navbar-item">
-                                <a class="button is-info" onclick="section4()">
-                                    <span class="icon">
-                                        <i class="fas fa-users-cog"></i>
-                                    </span>
-                                    <span>Avaliação de Desempenho</span>
+                        </div>
+                        <div id="navbarMenuHeroA" class="navbar-menu">
+                            <div class="navbar-end">
+                                <a class="navbar-item is-active" onclick="section1();">
+                                    Sobre
                                 </a>
-                            </span>
+                                <!--<a class="navbar-item" onclick="section2()">
+Dicas de Telemarketing
+</a>-->
+                                <a class="navbar-item" onclick="section3()">
+                                    Vagas de emprego
+                                </a>
+                                <span class="navbar-item">
+                                    <a class="button is-info" onclick="section4()">
+                                        <span class="icon">
+                                            <i class="fas fa-users-cog"></i>
+                                        </span>
+                                        <span>Avaliação de Desempenho</span>
+                                    </a>
+                                </span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </nav>
-        </div>
-    </section>
+                </nav>
+            </div>
+        </section>
 
-    <!-- cover -->
-    <section class="columns" id="section2">
-        <div class="column">
-            <img src="image/pexels-mart-production-7709262.jpg">
-        </div>
-
-        <div class="column">
-            <h1 class="title is-1 font">Transformando chamadas<br>em oportunidades!</h1>
-            <p>
-                Bem-vindo ao nosso site de telemarketing, onde a excelência em atendimento 
-                e a busca pela satisfação dos clientes são nossos principais pilares. 
-                Aqui, mergulhe em um mundo de oportunidades e descubra como podemos 
-                impulsionar o seu sucesso.
-            </p>
-            <div class="clear20x"></div>
-            <a onclick="section4()" class="button is-info">Descubra como evoluir clicando aqui</a>
-        </div>
-    </section>
-
-    <!-- vagas de emprego -->
-    <section class="section" id="section3">
-        <div class="container has-text-centered">
-            <h1 class="title is-1">Vagas de Emprego</h1>
-            <h1 class="subtitle is-5">Encontre seu caminho profissional: descubra vagas de emprego perfeitas para você!</h1>
-            <div class="clear100x"></div>
-        </div>
-        <div class="columns">
+        <!-- cover -->
+        <section class="columns" id="section1">
             <div class="column">
-                <div class="box">
-                    <h1 class="title is-3">Telemarketing Home Office</h1>
-                    <p>
-                        Buscamos um profissional para realizar o mapeamento e prospecção de potenciais
-                        clientes: Seu principal desafio será conseguir trazer resultados consistentes,
-                        realizando contato telefônico com o maior número de empresas com o objetivo de
-                        agendar reuniões assertivas para os Executivos de Vendas:
-
-                        Terá as seguintes responsabilidades principais:
-                        <br>
-                        - Agendar reuniões com potenciais clientes para os Executivos de Vendas;
-
-                        <br>
-                        - Incluir os contatos em listas de comunicação;
-
-                        <br>
-                        - Realizar contato telefônico para fazer apresentação das nossas soluções;
-                    </p>
-                    <p>&nbsp;</p>
-                    <a class="button is-info" href="https://rebrand.ly/mrrfmo0" target="_blank">Visualizar vaga</a>
-                </div>
+                <img src="image/pexels-mart-production-7709262.jpg">
             </div>
 
             <div class="column">
-                <div class="box">
-                    <h1 class="title is-3">Operador de Telemarketing Home Office</h1>
+                <div class="cover-box">
+                    <h1 class="title is-1 font">Transformando chamadas<br>em oportunidades!</h1>
                     <p>
-                        Realizar agendamento de reuniões com empresas para equipe de vendas. 
-                        Registrar todas as etapas
-                        de contato com os potenciais clientes em sistema informatizado. 
-                        Enviar apresentação por e-mail,
-                        atualizar cadastro e organizar a agenda da equipe de vendas. 
-                        Experincia em contatar cliente
-                        pessoa jurdica, desejvel boa gramtica, boa dico, conhecimento em 
-                        informtica e aplicativo de videoconferncia Teams.
+                        Bem-vindo ao nosso site de telemarketing, onde a excelência em atendimento 
+                        e a busca pela satisfação dos clientes são nossos principais pilares. 
+                        Aqui, mergulhe em um mundo de oportunidades e descubra como podemos 
+                        impulsionar o seu sucesso.
                     </p>
-                    <p>&nbsp;</p>
-                    <a class="button is-info" href="https://rebrand.ly/b9d679" target="_blank">Visualizar vaga</a>
+                    <div class="clear20x"></div>
+                    <a onclick="section4()" class="button is-info">Descubra como evoluir clicando aqui</a>
                 </div>
             </div>
+        </section>
 
-            <div class="column">
-                <div class="box">
-                    <h1 class="title is-3">Auxiliar de Marketing SDR</h1>
-                    <p>
-                        Responsabilidades do cargo: Realizar prospecção e qualificação de 
-                        possíveis clientes; Requisitos obrigatórios: Desejável experiência 
-                        com prospecção outbound e telemarketing. Escolaridade: Ensino médio.
-                    </p>
-                    <p>&nbsp;</p>
-                    <a class="button is-info" href="https://rebrand.ly/mbvr5a4" target="_blank">Visualizar vaga</a>
+        <!-- vagas de emprego -->
+        <section class="section" id="section3">
+            <div class="container has-text-centered">
+                <h1 class="title is-1">Vagas de Emprego</h1>
+                <h1 class="subtitle is-5">Encontre seu caminho profissional: descubra vagas de emprego perfeitas para você!</h1>
+                <div class="clear100x"></div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="box">
+                        <h1 class="title is-3">Telemarketing Home Office</h1>
+                        <p>
+                            Buscamos um profissional para realizar o mapeamento e prospecção de potenciais
+                            clientes: Seu principal desafio será conseguir trazer resultados consistentes,
+                            realizando contato telefônico com o maior número de empresas com o objetivo de
+                            agendar reuniões assertivas para os Executivos de Vendas:
+
+                            Terá as seguintes responsabilidades principais:
+                            <br>
+                            - Agendar reuniões com potenciais clientes para os Executivos de Vendas;
+
+                            <br>
+                            - Incluir os contatos em listas de comunicação;
+
+                            <br>
+                            - Realizar contato telefônico para fazer apresentação das nossas soluções;
+                        </p>
+                        <p>&nbsp;</p>
+                        <a class="button is-info" href="https://rebrand.ly/mrrfmo0" target="_blank">Visualizar vaga</a>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="box">
+                        <h1 class="title is-3">Operador de Telemarketing Home Office</h1>
+                        <p>
+                            Realizar agendamento de reuniões com empresas para equipe de vendas. 
+                            Registrar todas as etapas
+                            de contato com os potenciais clientes em sistema informatizado. 
+                            Enviar apresentação por e-mail,
+                            atualizar cadastro e organizar a agenda da equipe de vendas. 
+                            Experincia em contatar cliente
+                            pessoa jurdica, desejvel boa gramtica, boa dico, conhecimento em 
+                            informtica e aplicativo de videoconferncia Teams.
+                        </p>
+                        <p>&nbsp;</p>
+                        <a class="button is-info" href="https://rebrand.ly/b9d679" target="_blank">Visualizar vaga</a>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="box">
+                        <h1 class="title is-3">Auxiliar de Marketing SDR</h1>
+                        <p>
+                            Responsabilidades do cargo: Realizar prospecção e qualificação de 
+                            possíveis clientes; Requisitos obrigatórios: Desejável experiência 
+                            com prospecção outbound e telemarketing. Escolaridade: Ensino médio.
+                        </p>
+                        <p>&nbsp;</p>
+                        <a class="button is-info" href="https://rebrand.ly/mbvr5a4" target="_blank">Visualizar vaga</a>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <!-- respondi -->
+        <div id="section4" data-respondi-container="" data-respondi-mode="regular"
+             data-respondi-src="https://form.respondi.app/EJ6MCaXe" data-respondi-width="100%" data-respondi-height="600px">
         </div>
-    </section>
-
-    <!-- respondi -->
-    <div id="section4" data-respondi-container="" data-respondi-mode="regular"
-        data-respondi-src="https://form.respondi.app/EJ6MCaXe" data-respondi-width="100%" data-respondi-height="600px">
-    </div>
-    <script>const bodyScript = document.querySelector('body'), hasScript = document.querySelector('#respondi_src'); if (!hasScript) { const script = document.createElement('script'); script.setAttribute("async", ""); document.body.appendChild(script), script.id = 'respondi_src', script.src = 'https://embed.respondi.app/embed.js'; }</script>
-</body>
+        <script>const bodyScript = document.querySelector('body'), hasScript = document.querySelector('#respondi_src'); if (!hasScript) { const script = document.createElement('script'); script.setAttribute("async", ""); document.body.appendChild(script), script.id = 'respondi_src', script.src = 'https://embed.respondi.app/embed.js'; }</script>
+    </body>
 
 </html>
